@@ -87,4 +87,4 @@ export async function archiveItemAction(id: string) {
 
 // ── Seed default pricelist items after onboarding ────────────────────
 
-export { DEFAULT_ITEMS, seedDefaultItems as seedDefaultItemsAction } from "@/lib/seedItems";
+export { seedDefaultItems as seedDefaultItemsAction } from "@/lib/seedItems";
