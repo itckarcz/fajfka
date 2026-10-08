@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { randomUUID } from "crypto";
 import { db } from "@/lib/db";
-import { seedDefaultItemsAction } from "@/app/vice/cennik/actions";
+import { seedDefaultItems } from "@/lib/seedItems";
 
 // ── Only available in development ────────────────────────────────────────────
 
@@ -49,7 +49,7 @@ export async function GET(request: Request) {
   }
 
   // 4. Seed default pricelist items (no-op if already exists)
-  await seedDefaultItemsAction(account.id);
+  await seedDefaultItems(account.id);
 
   // 5. Create database session (30 days)
   const sessionToken = randomUUID();
