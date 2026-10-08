@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+/* Base reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #FFFFFF;
+  color: #14171A;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Prevent bounce scroll on iOS */
+html {
+  height: 100%;
+  overscroll-behavior: none;
+}
+
+/* Make amounts use tabular numbers */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Focus visible for accessibility */
+:focus-visible {
+  outline: 2px solid #E8590C;
+  outline-offset: 2px;
+}

@@ -1,0 +1,52 @@
+{
+  "name": "fajfka",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "db:migrate": "prisma migrate dev",
+    "db:seed": "tsx prisma/seed.ts",
+    "worker:dev": "tsx watch src/worker/index.ts"
+  },
+  "dependencies": {
+    "next": "15.3.4",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "@prisma/client": "6.10.1",
+    "pg-boss": "10.4.0",
+    "resend": "4.6.0",
+    "@react-pdf/renderer": "4.3.0",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "typescript": "5.8.3",
+    "@types/node": "22.15.32",
+    "@types/react": "19.1.8",
+    "@types/react-dom": "19.1.6",
+    "tailwindcss": "4.1.11",
+    "@tailwindcss/postcss": "4.1.11",
+    "prisma": "6.10.1",
+    "tsx": "4.20.3",
+    "vitest": "3.2.4",
+    "@vitejs/plugin-react": "4.5.2",
+    "@playwright/test": "1.52.0",
+    "postcss": "8.5.6"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@prisma/client",
+      "@prisma/engines",
+      "@tailwindcss/oxide",
+      "esbuild",
+      "prisma",
+      "sharp"
+    ]
+  }
+}

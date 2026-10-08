@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<title>Nová faktura – položky</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&amp;family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#C2410C}a:hover{color:#9A3412}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; display: flex; flex-direction: column; background: #FFFFFF; color: #14171A; font-family: Inter, system-ui, sans-serif; font-size: 16px; line-height: 24px;">
+  <header style="display: flex; align-items: center; gap: 8px; padding: 16px 16px 8px;">
+    <a href="Faktura-1-zakaznik.dc.html" aria-label="Zpět" style="display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 10px; border: 1px solid #9AA0A6; color: #14171A;">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </a>
+    <h1 style="margin: 0; flex-grow: 1; font-family: Archivo, system-ui, sans-serif; font-size: 22px; line-height: 28px; font-weight: 700;">Co jsi udělal?</h1>
+    <span style="font-size: 14px; font-weight: 600; color: #5B6168;">2 / 3</span>
+  </header>
+  <div style="margin: 0 16px; height: 6px; border-radius: 6px; background: #F4F5F6;"><div style="width: 66%; height: 6px; border-radius: 6px; background: #E8590C;"></div></div>
+
+  <div style="padding: 16px 16px 0; display: flex; flex-direction: column; gap: 16px; flex-grow: 1;">
+    <div style="font-size: 14px; line-height: 20px; color: #5B6168;">Pro <strong style="color: #14171A;">Jana Dvořáková</strong> · Polní 12, Brno</div>
+
+    <section style="display: flex; flex-direction: column; border: 1px solid #9AA0A6; border-radius: 10px;">
+      <div style="display: flex; align-items: center; gap: 12px; min-height: 68px; padding: 10px 14px; border-bottom: 1px solid #E3E5E8;">
+        <div style="flex-grow: 1;"><div style="font-weight: 600;">Výměna baterie – koupelna</div><div style="font-size: 14px; line-height: 20px; color: #5B6168;">1 ks × 2 400 Kč</div></div>
+        <div style="font-weight: 700; font-variant-numeric: tabular-nums;">2 400 Kč</div>
+      </div>
+      <div style="display: flex; align-items: center; gap: 12px; min-height: 68px; padding: 10px 14px; border-bottom: 1px solid #E3E5E8;">
+        <div style="flex-grow: 1;"><div style="font-weight: 600;">Flexi hadice 40 cm</div><div style="font-size: 14px; line-height: 20px; color: #5B6168;">2 ks × 180 Kč</div></div>
+        <div style="font-weight: 700; font-variant-numeric: tabular-nums;">360 Kč</div>
+      </div>
+      <div style="display: flex; align-items: center; gap: 12px; min-height: 68px; padding: 10px 14px;">
+        <div style="flex-grow: 1;"><div style="font-weight: 600;">Práce</div><div style="font-size: 14px; line-height: 20px; color: #5B6168;">1,5 h × 650 Kč</div></div>
+        <div style="font-weight: 700; font-variant-numeric: tabular-nums;">975 Kč</div>
+      </div>
+    </section>
+
+    <button type="button" style="display: flex; align-items: center; justify-content: center; gap: 8px; height: 52px; border: 2px dashed #9AA0A6; border-radius: 10px; background: #FFFFFF; color: #14171A; font: 600 17px Inter, system-ui, sans-serif;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+      Přidat položku
+    </button>
+
+    <div style="display: flex; flex-direction: column; gap: 8px;">
+      <div style="font-size: 14px; line-height: 20px; font-weight: 600; color: #5B6168;">Rychle z ceníku</div>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+        <button type="button" style="height: 48px; padding: 0 16px; border: 1px solid #9AA0A6; border-radius: 10px; background: #F4F5F6; color: #14171A; font: 600 15px Inter, system-ui, sans-serif;">+ Hodina práce</button>
+        <button type="button" style="height: 48px; padding: 0 16px; border: 1px solid #9AA0A6; border-radius: 10px; background: #F4F5F6; color: #14171A; font: 600 15px Inter, system-ui, sans-serif;">+ Doprava</button>
+        <button type="button" style="height: 48px; padding: 0 16px; border: 1px solid #9AA0A6; border-radius: 10px; background: #F4F5F6; color: #14171A; font: 600 15px Inter, system-ui, sans-serif;">+ Výjezd</button>
+      </div>
+    </div>
+  </div>
+
+  <div style="padding: 12px 16px 28px; border-top: 1px solid #E3E5E8; background: #F4F5F6; display: flex; flex-direction: column; gap: 12px;">
+    <div style="display: flex; align-items: baseline; justify-content: space-between;">
+      <div><div style="font-size: 14px; line-height: 20px; font-weight: 600;">Celkem</div><div style="font-size: 13px; line-height: 18px; color: #5B6168;">Nejsi plátce DPH</div></div>
+      <div style="font-family: Archivo, system-ui, sans-serif; font-size: 36px; line-height: 40px; font-weight: 800; font-variant-numeric: tabular-nums;">3 735 Kč</div>
+    </div>
+    <a href="Faktura-3-platba.dc.html" style="display: flex; align-items: center; justify-content: center; height: 56px; border-radius: 10px; background: #14171A; color: #FFFFFF; text-decoration: none; font-size: 17px; font-weight: 600;">Pokračovat k platbě</a>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

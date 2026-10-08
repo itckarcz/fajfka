@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<title>Fajfka – úvodní stránka</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&amp;family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#C2410C}a:hover{color:#9A3412}
+</style>
+</helmet>
+<div style="background: #FFFFFF; color: #14171A; font-family: Inter, system-ui, sans-serif; font-size: 17px; line-height: 26px;">
+
+  <header style="border-bottom: 1px solid #E3E5E8;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between;">
+      <a href="Web.dc.html" style="display: flex; align-items: center; gap: 4px; color: #14171A; text-decoration: none; font-family: Archivo, system-ui, sans-serif; font-weight: 800; font-size: 28px; letter-spacing: -0.02em;">
+        Fajfka
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E8590C" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6"/></svg>
+      </a>
+      <nav aria-label="Web" style="display: flex; flex-wrap: wrap; gap: 24px; align-items: center; font-weight: 600; font-size: 16px;">
+        <a href="#jak" style="color: #14171A; text-decoration: none;">Jak to funguje</a>
+        <a href="#eet" style="color: #14171A; text-decoration: none;">EET</a>
+        <a href="#cena" style="color: #14171A; text-decoration: none;">Cena</a>
+        <a href="#otazky" style="color: #14171A; text-decoration: none;">Otázky</a>
+        <a href="#start" style="display: inline-flex; align-items: center; height: 44px; padding: 0 18px; border-radius: 10px; background: #14171A; color: #FFFFFF; text-decoration: none;">Chci to vyzkoušet</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="start" style="max-width: 1200px; margin: 0 auto; padding: 72px 24px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center;">
+    <div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 24px;">
+      <span style="align-self: flex-start; padding: 4px 12px; border-radius: 6px; background: #FDE7D9; color: #C2410C; font-size: 15px; font-weight: 700;">Pro řemeslníky v terénu</span>
+      <h1 style="margin: 0; font-family: Archivo, system-ui, sans-serif; font-size: clamp(2.5rem, 6vw, 4.25rem); line-height: 1.02; font-weight: 800; letter-spacing: -0.02em;">Faktura a EET za 30 sekund. Přímo u zákazníka.</h1>
+      <p style="margin: 0; font-size: 20px; line-height: 30px; color: #3A4046; max-width: 560px;">Dodělal jsi práci? Vyťukáš položky, zákazník zaplatí QR kódem nebo hotově a faktura mu přijde e-mailem. Tržbu do EET pošleme za tebe.</p>
+      <form style="display: flex; flex-wrap: wrap; gap: 12px; max-width: 560px;">
+        <label style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 6px;">
+          <span style="font-size: 14px; font-weight: 600;">Tvůj e-mail</span>
+          <input type="email" placeholder="jmeno@email.cz" style="height: 56px; padding: 0 16px; border: 2px solid #14171A; border-radius: 10px; font: 400 17px Inter, system-ui, sans-serif; box-sizing: border-box;">
+        </label>
+        <button type="submit" style="align-self: flex-end; height: 56px; padding: 0 24px; border: 0; border-radius: 10px; background: #14171A; color: #FFFFFF; font: 700 17px Inter, system-ui, sans-serif;">Chci být mezi prvními</button>
+      </form>
+      <div style="display: flex; flex-wrap: wrap; gap: 20px; font-size: 15px; color: #3A4046;">
+        <span>✓ Bez App Store – funguje v prohlížeči</span>
+        <span>✓ iPhone i Android</span>
+        <span>✓ Bez smlouvy</span>
+      </div>
+    </div>
+
+    <div style="flex: 1 1 340px; display: flex; justify-content: center;">
+      <div style="position: relative; width: 340px; max-width: 100%;">
+        <div style="position: absolute; left: -24px; top: 40px; width: 200px; height: 420px; border-radius: 16px; background: #E8590C;"></div>
+        <div style="position: relative; margin-left: 40px; width: 280px; border: 10px solid #14171A; border-radius: 40px; background: #FFFFFF; padding: 28px 18px 22px; box-sizing: border-box; display: flex; flex-direction: column; gap: 14px;">
+          <div style="align-self: center; display: flex; align-items: center; justify-content: center; width: 72px; height: 72px; border-radius: 36px; background: #15803D; color: #FFFFFF;">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>
+          </div>
+          <div style="text-align: center; font-family: Archivo, system-ui, sans-serif; font-size: 24px; line-height: 30px; font-weight: 800;">Zaplaceno</div>
+          <div style="text-align: center; font-family: Archivo, system-ui, sans-serif; font-size: 18px; font-weight: 700;">3 735 Kč</div>
+          <div style="border: 1px solid #9AA0A6; border-radius: 12px; font-size: 14px; line-height: 20px;">
+            <div style="padding: 10px 12px; border-bottom: 1px solid #E3E5E8; color: #15803D; font-weight: 600;">✓ Faktura vystavena</div>
+            <div style="padding: 10px 12px; border-bottom: 1px solid #E3E5E8; color: #15803D; font-weight: 600;">✓ Tržba je v EET</div>
+            <div style="padding: 10px 12px; color: #15803D; font-weight: 600;">✓ Odesláno e-mailem</div>
+          </div>
+          <div style="height: 48px; border-radius: 10px; background: #14171A; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 16px;">Hotovo</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="jak" style="background: #F4F5F6;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 72px 24px; display: flex; flex-direction: column; gap: 32px;">
+      <h2 style="margin: 0; font-family: Archivo, system-ui, sans-serif; font-size: clamp(2rem, 4vw, 2.75rem); line-height: 1.1; font-weight: 800;">Tři kroky, než si sundáš rukavice</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px;">
+        <div style="background: #FFFFFF; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 10px;">
+          <div style="font-family: Archivo, system-ui, sans-serif; font-size: 44px; line-height: 1; font-weight: 800; color: #E8590C;">1</div>
+          <h3 style="margin: 0; font-family: Archivo, system-ui, sans-serif; font-size: 22px; line-height: 28px; font-weight: 700;">Vyber zákazníka</h3>
+          <p style="margin: 0; color: #3A4046;">Člověk, nebo firma. U firmy stačí IČO – adresu doplníme z ARES.</p>
+        </div>
+        <div style="background: #FFFFFF; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 10px;">
+          <div style="font-family: Archivo, system-ui, sans-serif; font-size: 44px; line-height: 1; font-weight: 800; color: #E8590C;">2</div>
+          <h3 style="margin: 0; font-family: Archivo, system-ui, sans-serif; font-size: 22px; line-height: 28px; font-weight: 700;">Vyťukej, co jsi udělal</h3>
+          <p style="margin: 0; color: #3A4046;">Práce, materiál, doprava. Opakované položky máš v ceníku na jedno klepnutí.</p>
+        </div>
+        <div style="background: #FFFFFF; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 10px;">
+          <div style="font-family: Archivo, system-ui, sans-serif; font-size: 44px; line-height: 1; font-weight: 800; color: #E8590C;">3</div>
+          <h3 style="margin: 0; font-family: Archivo, system-ui, sans-serif; font-size: 22px; line-height: 28px; font-weight: 700;">Nech si zaplatit</h3>
+          <p style="margin: 0; color: #3A4046;">QR kód na displeji, hotově, nebo převodem později. Faktura odejde e-mailem sama.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="eet" style="background: #14171A; color: #FFFFFF;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 72px 24px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center;">
+      <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 18px;">
+        <span style="align-self: flex-start; padding: 4px 12px; border-radius: 6px; background: #E8590C; color: #14171A; font-size: 15px; font-weight: 700;">EET 2.0 od roku 2027</span>
+        <h2 style="margin: 0; font-family: Archivo, system-ui, sans-serif; font-size: clamp(2rem, 4vw, 2.75rem); line-height: 1.1; font-weight: 800;">EET se vrací. Ty se o něj starat nemusíš.</h2>
+        <p style="margin: 0; color: #D5D9DD; font-size: 19px; line-height: 29px;">Jednou nahraješ certifikát z daňového portálu a hotovo. Každou platbu na místě – hotově, kartou i QR kódem – pošleme finanční správě, kód přidáme na fakturu. Bez signálu? Odešleme ji, až budeš zase online.</p>
+      </div>
+      <div style="flex: 1 1 340px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px;">
+        <div style="border: 1px solid #3A4046; border-radius: 16px; padding: 20px;"><div style="font-family: Archivo, system-ui, sans-serif; font-size: 32px; font-weight: 800; color: #F26B1D;">0</div><div style="color: #D5D9DD; font-size: 15px;">pokladen a tiskáren navíc</div></div>
+        <div style="border: 1px solid #3A4046; border-radius: 16px; padding: 20px;"><div style="font-family: Archivo, system-ui, sans-serif; font-size: 32px; font-weight: 800; color: #F26B1D;">1×</div><div style="color: #D5D9DD; font-size: 15px;">nastavíš certifikát</div></div>
+        <div style="border: 1px solid #3A4046; border-radius: 16px; padding: 20px;"><div style="font-family: Archivo, system-ui, sans-serif; font-size: 32px; font-weight: 800; color: #F26B1D;">48 h</div><div style="color: #D5D9DD; font-size: 15px;">automatické opakování při výpadku</div></div>
+        <div style="border: 1px solid #3A4046; border-radius: 16px; padding: 20px;"><div style="font-family: Archivo, system-ui, sans-serif; font-size: 32px; font-weight: 800; color: #F26B1D;">✓</div><div style="color: #D5D9DD; font-size: 15px;">kód EET přímo na faktuře</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div style="max-width: 1200px; margin: 0 auto; padding: 72px 24px; display: flex; flex-direction: column; gap: 24px;">
+      <h2 style="margin: 0; font-family: Archivo, system-ui, sans-serif; font-size: clamp(2rem, 4vw, 2.75rem); line-height: 1.1; font-weight: 800;">Pro koho je Fajfka</h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+        <span style="padding: 10px 16px; border: 1px solid #9AA0A6; border-radius: 10px; font-weight: 600;">Instalatéři</span>
+        <span style="padding: 10px 16px; border: 1px solid #9AA0A6; border-radius: 10px; font-weight: 600;">Elektrikáři</span>
+        <span style="padding: 10px 16px; border: 1px solid #9AA0A6; border-radius: 10px; font-weight: 600;">Malíři a natěrači</span>
+        <span style="padding: 10px 16px; border: 1px solid #9AA0A6; border-radius: 10px; font-weight: 600;">Podlaháři</span>
+        <span style="padding: 10px 16px; border: 1px solid #9AA0A6; border-radius: 10px; font-weight: 600;">Zámečníci</span>
+        <span style="padding: 10px 16px; border: 1px solid #9AA0A6; border-radius: 10px; font-weight: 600;">Topenáři</span>
+        <span style="padding: 10px 16px; border: 1px solid #9AA0A6; border-radius: 10px; font-weight: 600;">Hodinoví manželé</span>
+        <span style="padding: 10px 16px; border: 1px solid #9AA0A6; border-radius: 10px; font-weight: 600;">Servis spotřebičů</span>
+      </div>
+      <p style="margin: 0; color: #3A4046; max-width: 720px;">Pro OSVČ, plátce i neplátce DPH. Fakturuješ lidem i firmám – formát faktury podle toho nastavíme sami.</p>
+    </div>
+  </section>
+
+  <section id="cena" style="background: #F4F5F6;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 72px 24px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center;">
+      <div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 16px;">
+        <h2 style="margin: 0; font-family: Archivo, system-ui, sans-serif; font-size: clamp(2rem, 4vw, 2.75rem); line-height: 1.1; font-weight: 800;">Jedna cena. Všechno v ní.</h2>
+        <p style="margin: 0; color: #3A4046;">Bez placených doplňků za EET nebo QR platby. Zrušíš kdykoli jedním klepnutím.</p>
+      </div>
+      <div style="flex: 1 1 360px; background: #FFFFFF; border: 2px solid #14171A; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 16px;">
+        <div style="display: flex; align-items: baseline; gap: 8px;"><span style="font-family: Archivo, system-ui, sans-serif; font-size: 56px; line-height: 1; font-weight: 800;">199 Kč</span><span style="color: #5B6168;">/ měsíc</span></div>
+        <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px;">
+          <li>✓ Neomezeně faktur a zákazníků</li>
+          <li>✓ QR platba na místě</li>
+          <li>✓ EET automaticky</li>
+          <li>✓ Faktury e-mailem i přes WhatsApp</li>
+          <li>✓ Export pro účetní</li>
+        </ul>
+        <a href="#start" style="display: flex; align-items: center; justify-content: center; height: 56px; border-radius: 10px; background: #14171A; color: #FFFFFF; text-decoration: none; font-weight: 700;">Chci být mezi prvními</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="otazky">
+    <div style="max-width: 800px; margin: 0 auto; padding: 72px 24px; display: flex; flex-direction: column; gap: 12px;">
+      <h2 style="margin: 0 0 12px; font-family: Archivo, system-ui, sans-serif; font-size: clamp(2rem, 4vw, 2.75rem); line-height: 1.1; font-weight: 800;">Časté otázky</h2>
+      <details open style="border: 1px solid #9AA0A6; border-radius: 10px; padding: 16px 20px;">
+        <summary style="font-weight: 700; cursor: pointer;">Musím si něco instalovat z App Store?</summary>
+        <p style="margin: 10px 0 0; color: #3A4046;">Ne. Otevřeš web v telefonu a dáš „Přidat na plochu“. Ikona se chová jako normální aplikace.</p>
+      </details>
+      <details style="border: 1px solid #9AA0A6; border-radius: 10px; padding: 16px 20px;">
+        <summary style="font-weight: 700; cursor: pointer;">Stačí zákazníkovi poslat fakturu e-mailem?</summary>
+        <p style="margin: 10px 0 0; color: #3A4046;">Ano, elektronická faktura je platná. Když ji zákazník chce na papíře, pošli mu PDF k vytištění.</p>
+      </details>
+      <details style="border: 1px solid #9AA0A6; border-radius: 10px; padding: 16px 20px;">
+        <summary style="font-weight: 700; cursor: pointer;">Co když nemám signál?</summary>
+        <p style="margin: 10px 0 0; color: #3A4046;">Fakturu vystavíš i offline. EET a e-mail odejdou, jakmile se telefon připojí.</p>
+      </details>
+      <details style="border: 1px solid #9AA0A6; border-radius: 10px; padding: 16px 20px;">
+        <summary style="font-weight: 700; cursor: pointer;">Kde jsou moje data?</summary>
+        <p style="margin: 10px 0 0; color: #3A4046;">Na serverech v EU. Kdykoli si je stáhneš jako PDF a CSV.</p>
+      </details>
+    </div>
+  </section>
+
+  <footer style="background: #14171A; color: #D5D9DD;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 40px 24px; display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; font-size: 15px;">
+      <div style="font-family: Archivo, system-ui, sans-serif; font-weight: 800; font-size: 24px; color: #FFFFFF;">Fajfka</div>
+      <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+        <a href="#" style="color: #D5D9DD;">Obchodní podmínky</a>
+        <a href="#" style="color: #D5D9DD;">Ochrana osobních údajů</a>
+        <a href="#" style="color: #D5D9DD;">Kontakt</a>
+      </div>
+      <div>[NÁZEV FIRMY] · IČO [DOPLNIT]</div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":3560}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

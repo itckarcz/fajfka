@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<title>Seznam faktur</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&amp;family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#C2410C}a:hover{color:#9A3412}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; display: flex; flex-direction: column; background: #FFFFFF; color: #14171A; font-family: Inter, system-ui, sans-serif; font-size: 16px; line-height: 24px;">
+  <header style="display: flex; align-items: center; justify-content: space-between; padding: 20px 16px 12px;">
+    <h1 style="margin: 0; font-family: Archivo, system-ui, sans-serif; font-size: 24px; line-height: 30px; font-weight: 700;">Faktury</h1>
+    <button type="button" aria-label="Hledat" style="display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 10px; border: 1px solid #9AA0A6; background: #FFFFFF; color: #14171A;">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>
+    </button>
+  </header>
+
+  <div style="display: flex; gap: 8px; padding: 0 16px 12px; flex-wrap: wrap;">
+    <button type="button" style="height: 44px; padding: 0 14px; border: 0; border-radius: 22px; background: #14171A; color: #FFFFFF; font: 600 15px Inter, system-ui, sans-serif;">Vše</button>
+    <button type="button" style="height: 44px; padding: 0 14px; border: 1px solid #9AA0A6; border-radius: 22px; background: #FFFFFF; color: #14171A; font: 600 15px Inter, system-ui, sans-serif;">Čeká 2</button>
+    <button type="button" style="height: 44px; padding: 0 14px; border: 1px solid #9AA0A6; border-radius: 22px; background: #FFFFFF; color: #14171A; font: 600 15px Inter, system-ui, sans-serif;">Po splatnosti 1</button>
+    <button type="button" style="height: 44px; padding: 0 14px; border: 1px solid #9AA0A6; border-radius: 22px; background: #FFFFFF; color: #14171A; font: 600 15px Inter, system-ui, sans-serif;">Zaplaceno</button>
+  </div>
+
+  <div style="padding: 0 16px; display: flex; flex-direction: column; flex-grow: 1;">
+    <div style="padding: 12px 0 4px; font-size: 13px; line-height: 18px; font-weight: 600; color: #5B6168;">DNES</div>
+    <div style="display: flex; align-items: center; justify-content: space-between; min-height: 68px; border-bottom: 1px solid #E3E5E8;">
+      <div><div style="font-weight: 600;">Jana Dvořáková</div><div style="font-size: 13px; line-height: 18px; color: #5B6168;">2026-0142 · hotově · EET ✓</div></div>
+      <div style="text-align: right;"><div style="font-weight: 700; font-variant-numeric: tabular-nums;">3 735 Kč</div><span style="display: inline-block; padding: 1px 8px; border-radius: 6px; background: #DCFCE7; color: #15803D; font-size: 13px; line-height: 20px; font-weight: 700;">✓ Zaplaceno</span></div>
+    </div>
+    <div style="padding: 16px 0 4px; font-size: 13px; line-height: 18px; font-weight: 600; color: #5B6168;">TENTO TÝDEN</div>
+    <div style="display: flex; align-items: center; justify-content: space-between; min-height: 68px; border-bottom: 1px solid #E3E5E8;">
+      <div><div style="font-weight: 600;">Stavby Horák s.r.o.</div><div style="font-size: 13px; line-height: 18px; color: #5B6168;">2026-0141 · splatnost 21. 10.</div></div>
+      <div style="text-align: right;"><div style="font-weight: 700; font-variant-numeric: tabular-nums;">4 900 Kč</div><span style="display: inline-block; padding: 1px 8px; border-radius: 6px; background: #FEF3C7; color: #B45309; font-size: 13px; line-height: 20px; font-weight: 700;">◷ Čeká</span></div>
+    </div>
+    <div style="display: flex; align-items: center; justify-content: space-between; min-height: 68px; border-bottom: 1px solid #E3E5E8;">
+      <div><div style="font-weight: 600;">Lucie Malá</div><div style="font-size: 13px; line-height: 18px; color: #5B6168;">2026-0140 · splatnost 19. 10.</div></div>
+      <div style="text-align: right;"><div style="font-weight: 700; font-variant-numeric: tabular-nums;">1 500 Kč</div><span style="display: inline-block; padding: 1px 8px; border-radius: 6px; background: #FEF3C7; color: #B45309; font-size: 13px; line-height: 20px; font-weight: 700;">◷ Čeká</span></div>
+    </div>
+    <div style="display: flex; align-items: center; justify-content: space-between; min-height: 68px; border-bottom: 1px solid #E3E5E8;">
+      <div><div style="font-weight: 600;">Petr Svoboda</div><div style="font-size: 13px; line-height: 18px; color: #5B6168;">2026-0139 · QR na místě · EET ✓</div></div>
+      <div style="text-align: right;"><div style="font-weight: 700; font-variant-numeric: tabular-nums;">8 250 Kč</div><span style="display: inline-block; padding: 1px 8px; border-radius: 6px; background: #DCFCE7; color: #15803D; font-size: 13px; line-height: 20px; font-weight: 700;">✓ Zaplaceno</span></div>
+    </div>
+    <div style="display: flex; align-items: center; justify-content: space-between; min-height: 68px; border-bottom: 1px solid #E3E5E8;">
+      <div><div style="font-weight: 600;">Tomáš Kraus</div><div style="font-size: 13px; line-height: 18px; color: #5B6168;">2026-0138 · splatnost 2. 10.</div></div>
+      <div style="text-align: right;"><div style="font-weight: 700; font-variant-numeric: tabular-nums;">1 500 Kč</div><span style="display: inline-block; padding: 1px 8px; border-radius: 6px; background: #FEE2E2; color: #B91C1C; font-size: 13px; line-height: 20px; font-weight: 700;">! Po splatnosti</span></div>
+    </div>
+    <button type="button" style="margin-top: 12px; height: 48px; border: 1px solid #9AA0A6; border-radius: 10px; background: #FFFFFF; color: #14171A; font: 600 15px Inter, system-ui, sans-serif;">Poslat Tomášovi připomínku</button>
+  </div>
+
+  <nav aria-label="Hlavní menu" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid #9AA0A6; background: #FFFFFF; padding-bottom: 20px;">
+    <a href="Main.dc.html" style="display: flex; flex-direction: column; align-items: center; gap: 2px; padding-top: 12px; min-height: 56px; text-decoration: none; color: #5B6168; font-size: 13px; font-weight: 600;">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Domů</a>
+    <a href="Faktury.dc.html" style="display: flex; flex-direction: column; align-items: center; gap: 2px; padding-top: 10px; min-height: 56px; text-decoration: none; color: #C2410C; font-size: 13px; font-weight: 700; border-top: 3px solid #E8590C; margin-top: -1px;">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M9 12h7M9 16h7"/></svg>Faktury</a>
+    <a href="Faktura-1-zakaznik.dc.html" style="display: flex; flex-direction: column; align-items: center; gap: 2px; padding-top: 12px; min-height: 56px; text-decoration: none; color: #5B6168; font-size: 13px; font-weight: 600;">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14.8c1.8.8 3 2.6 3.5 5.2"/></svg>Zákazníci</a>
+    <a href="PC-prehled.dc.html" style="display: flex; flex-direction: column; align-items: center; gap: 2px; padding-top: 12px; min-height: 56px; text-decoration: none; color: #5B6168; font-size: 13px; font-weight: 600;">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/></svg>Více</a>
+  </nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
