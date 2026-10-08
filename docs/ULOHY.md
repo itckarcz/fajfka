@@ -22,7 +22,7 @@ Pravidlo: robíme jednu úlohu naraz, v tomto poradí. Po každej úlohe nasledu
 **Hotové, keď:** appka sa dá pridať na plochu na iPhone aj Androide a otvorí sa bez lišty prehliadača. CI je zelené.
 
 ## 2. Registrácia, prihlásenie a prvé nastavenie
-- [ ] Hotovo (dátum: ……)
+- [x] Hotovo (dátum: 2026-10-08)
 
 - Prihlásenie magickým odkazom (Resend). Session v cookie (httpOnly, secure).
 - Prvé nastavenie v 3 krokoch:

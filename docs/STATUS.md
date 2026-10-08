@@ -18,7 +18,7 @@
 | # | Úloha | Stav | Dátum |
 |---|---|---|---|
 | 1 | Kostra projektu | ✅ Hotovo | 2026-10-08 |
-| 2 | Registrácia a prihlásenie | ⬜ Čaká | – |
+| 2 | Registrácia a prihlásenie | ✅ Hotovo | 2026-10-08 |
 | 3 | Zákazníci a ceník | ⬜ Čaká | – |
 | 4 | Jadro dokladu (bez UI) | ⬜ Čaká | – |
 | 5 | Obrazovky Nová faktura | ⬜ Čaká | – |
@@ -164,8 +164,8 @@ fajfka/
 
 ## Nasledujúca úloha
 
-**Úloha 2 – Registrácia a prihlásenie**
-- Magický odkaz cez Resend (bez hesiel)
-- Session v httpOnly cookie
-- Prvé nastavenie v 3 krokoch: IČO → ARES, DPH, IBAN + EET
-- Obrazovka „Přidej na plochu" (iPhone Safari)
+**Úloha 3 – Zákazníci a ceník**
+- Zákazník: Člověk (meno/e-mail) alebo Firma (IČO → ARES)
+- Vyhľadávanie, zoradenie podľa posledného použitia
+- Ceník: názov, jednotka, cena, sadzba DPH
+- Predvyplnené položky pri registrácii: Hodina práce, Výjezd, Doprava, Materiál

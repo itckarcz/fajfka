@@ -43,3 +43,13 @@ prisma/*.db
 coverage/
 playwright-report/
 test-results/
+
+# TypeScript cache
+tsconfig.tsbuildinfo
+
+# Claude Code internal
+.claude/
+
+# Research files (not part of source)
+"CLAUDE - kópia.md"
+Reserch WEB dizign/

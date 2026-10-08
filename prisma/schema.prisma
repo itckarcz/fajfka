@@ -61,12 +61,41 @@ model Account {
 }
 
 model User {
-  id        String    @id @default(cuid())
-  email     String    @unique
-  accountId String
-  account   Account   @relation(fields: [accountId], references: [id])
-  createdAt DateTime  @default(now())
-  lastLogin DateTime?
+  id            String    @id @default(cuid())
+  email         String    @unique
+  emailVerified DateTime?
+  name          String?
+  image         String?
+  accountId     String?
+  account       Account?  @relation(fields: [accountId], references: [id])
+  createdAt     DateTime  @default(now())
+  lastLogin     DateTime?
+
+  // Auth.js relations
+  sessions      Session[]
+  verifications VerificationToken[]
+}
+
+// Auth.js v5 – session storage
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+// Auth.js v5 – magic link tokens
+model VerificationToken {
+  identifier String
+  token      String
+  expires    DateTime
+  userId     String?
+  user       User?    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([identifier, token])
 }
 
 enum CustomerType {
