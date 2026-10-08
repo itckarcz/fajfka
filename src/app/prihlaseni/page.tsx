@@ -1,11 +1,7 @@
 import { signIn } from "@/auth";
 import cs from "@/texts/cs";
 
-export default function PrihlaseniPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ error?: string }>;
-}) {
+export default function PrihlaseniPage() {
   return (
     <div className="flex flex-col min-h-dvh max-w-[390px] mx-auto bg-paper text-ink font-sans px-4">
       {/* Logo */}

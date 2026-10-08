@@ -6,6 +6,7 @@ import { db } from "@/lib/db";
 import { lookupIco, isAresError } from "@/lib/ares";
 import { validateIban } from "@/lib/iban";
 import { redirect } from "next/navigation";
+import { seedDefaultItemsAction } from "@/app/vice/cennik/actions";
 
 // --- Step 1: ICO lookup ---
 
@@ -123,6 +124,9 @@ export async function saveStep3Action(formData: FormData) {
       eetMode: eetChoice === "off" ? "OFF" : "NOT_SET",
     },
   });
+
+  // Seed default pricelist items for new account
+  await seedDefaultItemsAction(user.accountId);
 
   redirect("/");
 }

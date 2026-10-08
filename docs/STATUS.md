@@ -19,7 +19,7 @@
 |---|---|---|---|
 | 1 | Kostra projektu | ✅ Hotovo | 2026-10-08 |
 | 2 | Registrácia a prihlásenie | ✅ Hotovo | 2026-10-08 |
-| 3 | Zákazníci a ceník | ⬜ Čaká | – |
+| 3 | Zákazníci a ceník | ✅ Hotovo | 2026-10-08 |
 | 4 | Jadro dokladu (bez UI) | ⬜ Čaká | – |
 | 5 | Obrazovky Nová faktura | ⬜ Čaká | – |
 | 6 | QR Platba | ⬜ Čaká | – |
@@ -162,10 +162,27 @@ fajfka/
 
 ---
 
-## Nasledujúca úloha
+## Čo je hotové (Úloha 3 – Zákazníci a ceník)
 
-**Úloha 3 – Zákazníci a ceník**
-- Zákazník: Člověk (meno/e-mail) alebo Firma (IČO → ARES)
-- Vyhľadávanie, zoradenie podľa posledného použitia
-- Ceník: názov, jednotka, cena, sadzba DPH
-- Predvyplnené položky pri registrácii: Hodina práce, Výjezd, Doprava, Materiál
+### Zákazníci
+- Zoznam zákazníkov s vyhľadávaním (meno, IČO, e-mail, telefón)
+- Zoradenie podľa `lastUsedAt` (posledné použitie)
+- Nový zákazník: Člověk (meno, e-mail, tel, adresa) alebo Firma (IČO → ARES, DIČ, DPH)
+- Detail zákazníka s editáciou (`/zakaznici/[id]`)
+
+### Ceník
+- Zoznam aktívnych položiek (`/vice/cennik`)
+- Nová položka: názov, jednotka (ks/h/m/m²/km/paušál), cena (Kč→hal), sadzba DPH (0/12/21)
+- Editácia položky (`/vice/cennik/[id]`)
+- Archivácia položky
+- Predvyplnené položky pri registrácii: Hodina práce 800 Kč/h, Výjezd 500 Kč, Doprava 7 Kč/km, Materiál 0 Kč/ks
+
+### ESLint
+- Nainštalovaný `eslint@9` + `eslint-config-next@15.3.4` + `@eslint/eslintrc`
+- Flat config `eslint.config.mjs` (Next.js core-web-vitals + TypeScript)
+
+### Nasledujúca úloha
+
+**Úloha 4 – Jadro dokladu (bez UI)**
+- `src/lib/invoice/`: výpočty, DPH, zaokrúhlenie, číslovanie, stavy
+- Všetky 6 kombinácií so 100 % pokrytím testami

@@ -34,7 +34,7 @@ Pravidlo: robíme jednu úlohu naraz, v tomto poradí. Po každej úlohe nasledu
 **Hotové, keď:** nový používateľ sa prihlási a nastaví účet do 2 minút. ARES výpadok nezablokuje registráciu (ručné vyplnenie).
 
 ## 3. Zákazníci a ceník
-- [ ] Hotovo (dátum: ……)
+- [x] Hotovo (dátum: 2026-10-08)
 
 - Zákazník: Člověk (meno a/alebo e-mail) / Firma (IČO → ARES, DIČ, platiteľ DPH).
 - Vyhľadávanie podľa mena, IČO, e-mailu a telefónu. Zoradenie podľa posledného použitia.
